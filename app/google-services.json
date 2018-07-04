@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "611490777254",
+    "firebase_url": "https://diversionapp-2f7f0.firebaseio.com",
+    "project_id": "diversionapp-2f7f0",
+    "storage_bucket": "diversionapp-2f7f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611490777254:android:7ab3cf060e05b5b6",
+        "android_client_info": {
+          "package_name": "org.upesacm.diversionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611490777254-6fung1ae8gvj6ov07vf1va4h6fojo2hp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.upesacm.diversionapp",
+            "certificate_hash": "2c1098d7851218a094075f20d4eea961a5fea5c0"
+          }
+        },
+        {
+          "client_id": "611490777254-5qbs64b5q6kh456j7kif9tv4p4vihld1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZyC4sneJnjk760cBJriTvsjxG6i_aWwA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611490777254-5qbs64b5q6kh456j7kif9tv4p4vihld1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
