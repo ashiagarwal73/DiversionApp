@@ -32,7 +32,7 @@ public class Question95 extends SupportBlurDialogFragment {
         super.onAttach(context);
          question95Callback=(Question95Callback)context;
     }
-    interface Question95Callback{
+    public interface Question95Callback{
         public void question95();
     }
 }
