@@ -23,7 +23,13 @@ public class page7 extends android.support.v4.app.Fragment{
                 callback.clickToNextFrom10((Button) view.findViewById(R.id.click10));
             }
         });
+        view.findViewById(R.id.imageview2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callback.onTreasureClick();
 
+            }
+        });
         return view;
 
     }
@@ -35,6 +41,7 @@ public class page7 extends android.support.v4.app.Fragment{
     }
     public interface Callback{
         void clickToNextFrom10( Button button);
+        void onTreasureClick();
 
     }
 }

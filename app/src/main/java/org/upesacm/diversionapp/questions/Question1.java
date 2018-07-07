@@ -7,7 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import org.upesacm.diversionapp.R;
 
@@ -15,26 +18,65 @@ import fr.tvbarthel.lib.blurdialogfragment.SupportBlurDialogFragment;
 
 public class Question1 extends SupportBlurDialogFragment {
     Question1Callback question1Callback;
+    TextView question, hint;
+    EditText answer;
+    ImageView ques_image1;
+    private final String CORRECT_ANSWER = "";
+    private final String HINT1 = "";
+    private boolean hint_1_used;
+    private boolean hint_2_used;
+    private final String HINT2 = "";
+    private int score;
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, final Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.image_type, container, false);
+        setCancelable(false);
+        question = view.findViewById(R.id.question);
+        ques_image1 = view.findViewById(R.id.ques_image1);
+        answer = view.findViewById(R.id.answer);
+        hint = view.findViewById(R.id.hint);
         view.findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                question1Callback.question1();
-                dismiss();
+                if (answer.getText().toString().equalsIgnoreCase(CORRECT_ANSWER)) {
+                    if (hint_2_used) {
+                        score = 10;
+                        question1Callback.question1(score);
+                        dismiss();
+                    } else if (hint_1_used) {
+                        score = 20;
+                        question1Callback.question1(score);
+                        dismiss();
+                    } else {
+                        score = 30;
+                        question1Callback.question1(score);
+                        dismiss();
+                    }
+                } else {
+                    if (!hint_1_used) {
+                        hint.setText(HINT1);
+                        hint_1_used = true;
+                    } else {
+                        hint.setText(HINT2);
+                        hint_2_used = true;
+                    }
+                }
+
             }
         });
         return view;
     }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-         question1Callback=(Question1Callback)context;
+        question1Callback = (Question1Callback) context;
     }
-    public interface Question1Callback{
-        public void question1();
+
+    public interface Question1Callback {
+        public void question1(int score);
     }
+
 }

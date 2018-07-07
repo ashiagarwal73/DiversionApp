@@ -9,7 +9,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
-        android:id="@+id/ques_image1"
+        android:id="@+id/imageview1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
@@ -30,10 +30,10 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
-        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageview1"
+        app:layout_constraintEnd_toEndOf="@+id/imageview1"
         app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="@+id/ques_image1"
-        app:layout_constraintTop_toTopOf="@+id/ques_image1"
+        app:layout_constraintStart_toStartOf="@+id/imageview1"
+        app:layout_constraintTop_toTopOf="@+id/imageview1"
         app:layout_constraintVertical_bias="0.246"/>
 </android.support.constraint.ConstraintLayout>

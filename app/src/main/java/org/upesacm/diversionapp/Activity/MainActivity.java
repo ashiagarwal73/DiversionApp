@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import org.upesacm.diversionapp.Adapter.PagerAdapter;
 import org.upesacm.diversionapp.R;
 import org.upesacm.diversionapp.ViewPagerCustomDuration;
@@ -57,9 +56,7 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
         Question81.Question81Callback, Question82.Question82Callback, Question83.Question83Callback,
         Question91.Question91Callback, Question92.Question92Callback, Question93.Question93Callback,
         Question99.Question99Callback, Question94.Question94Callback, Question95.Question95Callback,
-        Question96.Question96Callback, Question97.Question97Callback, Question98.Question98Callback, Question10.Question10Callback
-
-{
+        Question96.Question96Callback, Question97.Question97Callback, Question98.Question98Callback, Question10.Question10Callback {
     ViewPagerCustomDuration mViewPager;
     ImageView mImageView;
     Button b;
@@ -449,47 +446,55 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
         }
     }
 
+    private int score = 0;
+
     @Override
-    public void question1() {
+    public void question1(int score) {
         moveY(450f);
         b.setBackgroundResource(R.drawable.selected);
         ques1Done = true;
+        this.score = this.score + score;
+        Toast.makeText(this, "" + score, Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public void question2() {
+    public void question2(int score) {
         moveY(1000f);
         moveX(0f);
         mViewPager.setCurrentItem(1);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques2Done = true;
     }
 
     @Override
-    public void question3() {
+    public void question3(int score) {
         moveXY(200f, 400f);
         mViewPager.setCurrentItem(1);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques3Done = true;
     }
 
     @Override
-    public void question4() {
+    public void question4(int score) {
         moveXY(120f, 800f);
         mViewPager.setCurrentItem(2);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques4Done = true;
     }
 
     @Override
-    public void question5() {
+    public void question5(int score) {
         moveXY(300f, 600f);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques5Done = true;
     }
 
     @Override
-    public void question61() {
+    public void question61(int score) {
         moveXY(100f, 400f);
         mViewPager.setCurrentItem(3);
         mViewPager.getChildAt(4).findViewById(R.id.click72).setVisibility(View.GONE);
@@ -503,11 +508,12 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
         mViewPager.getChildAt(5).findViewById(R.id.click98).setVisibility(View.GONE);
         mViewPager.getChildAt(5).findViewById(R.id.click99).setVisibility(View.GONE);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques61Done = true;
     }
 
     @Override
-    public void question62() {
+    public void question62(int score) {
         moveXY(100f, 600f);
         mViewPager.setCurrentItem(3);
         b.setBackgroundResource(R.drawable.selected);
@@ -522,11 +528,12 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
         mViewPager.getChildAt(5).findViewById(R.id.click98).setVisibility(View.GONE);
         mViewPager.getChildAt(5).findViewById(R.id.click99).setVisibility(View.GONE);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques62Done = true;
     }
 
     @Override
-    public void question63() {
+    public void question63(int score) {
         moveXY(100f, 800f);
         mViewPager.setCurrentItem(3);
         b.setBackgroundResource(R.drawable.selected);
@@ -540,139 +547,163 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
         mViewPager.getChildAt(5).findViewById(R.id.click94).setVisibility(View.GONE);
         mViewPager.getChildAt(5).findViewById(R.id.click95).setVisibility(View.GONE);
         mViewPager.getChildAt(5).findViewById(R.id.click96).setVisibility(View.GONE);
+        this.score = this.score + score;
         ques63Done = true;
     }
 
     @Override
-    public void question71() {
+    public void question71(int score) {
         moveY(300f);
         moveX(0f);
         mViewPager.setCurrentItem(4);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques71Done = true;
     }
 
     @Override
-    public void question72() {
+    public void question72(int score) {
         moveX(0f);
         mViewPager.setCurrentItem(4);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques72Done = true;
 
     }
 
     @Override
-    public void question73() {
+    public void question73(int score) {
         moveY(1000f);
         moveX(0f);
         mViewPager.setCurrentItem(4);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques73Done = true;
     }
 
     @Override
-    public void question81() {
+    public void question81(int score) {
         moveXY(400f, 500f);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques81Done = true;
     }
 
     @Override
-    public void question82() {
+    public void question82(int score) {
         moveX(300f);
         moveY(650f);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques82Done = true;
     }
 
     @Override
-    public void question83() {
+    public void question83(int score) {
         moveXY(400f, 850f);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques83Done = true;
     }
 
     @Override
-    public void question91() {
+    public void question91(int score) {
         moveXY(0f, 30f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques91Done = true;
     }
 
     @Override
-    public void question92() {
+    public void question92(int score) {
         moveXY(0f, 100f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques92Done = true;
     }
 
     @Override
-    public void question93() {
+    public void question93(int score) {
         moveXY(0f, 200f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques93Done = true;
     }
 
     @Override
-    public void question94() {
+    public void question94(int score) {
         moveXY(100f, 500f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques94Done = true;
     }
 
     @Override
-    public void question95() {
+    public void question95(int score) {
         moveXY(100f, 600f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques95Done = true;
     }
 
     @Override
-    public void question96() {
+    public void question96(int score) {
         moveXY(100f, 700f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques96Done = true;
     }
 
     @Override
-    public void question97() {
+    public void question97(int score) {
         moveXY(0f, 900f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques97Done = true;
     }
 
     @Override
-    public void question98() {
+    public void question98(int score) {
         moveXY(0f, 1000f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques98Done = true;
     }
 
     @Override
-    public void question99() {
+    public void question99(int score) {
         moveXY(0f, 1100f);
         mViewPager.setCurrentItem(5);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques99Done = true;
     }
 
     @Override
-    public void question10() {
+    public void question10(int score) {
         moveXY(400f, 700f);
         moveX(600f);
         mViewPager.setCurrentItem(6);
         b.setBackgroundResource(R.drawable.selected);
+        this.score = this.score + score;
         ques10Done = true;
     }
 
+    @Override
+    public void onTreasureClick() {
+        if(ques10Done) {
+            Toast.makeText(this, "Hurray!!\nComgratulations You Completed the Game...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "" + score, Toast.LENGTH_SHORT).show();
+        }
+    }
     @Override
     protected void onPause() {
         super.onPause();
@@ -687,8 +718,9 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
                 }
             }
         }.start();
-        back=false;
+        back = false;
     }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -698,7 +730,7 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        AlertDialog.Builder dialog=new AlertDialog.Builder(this);
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setMessage("On closing you wont be able to continue the game");
         dialog.setTitle("Finish the game?");
         dialog.setPositiveButton("Finish", new DialogInterface.OnClickListener() {

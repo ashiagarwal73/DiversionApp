@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/ques_image1"
+            android:id="@+id/imageview1"
             android:layout_width="294dp"
             android:layout_height="237dp"
             android:layout_marginBottom="8dp"
@@ -24,7 +24,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ques_image2"
+            app:layout_constraintTop_toBottomOf="@+id/imageview2"
             app:layout_constraintVertical_bias="0.0"/>
 
         <Button
@@ -40,14 +40,14 @@
             android:onClick="onSubmit"
             android:text="Login"
             android:textColor="@android:color/white"
-            app:layout_constraintBottom_toTopOf="@+id/ques_image1"
-            app:layout_constraintEnd_toEndOf="@+id/ques_image1"
+            app:layout_constraintBottom_toTopOf="@+id/imageview1"
+            app:layout_constraintEnd_toEndOf="@+id/imageview1"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/ques_image1"
+            app:layout_constraintStart_toStartOf="@+id/imageview1"
             app:layout_constraintTop_toBottomOf="@+id/password"/>
 
         <ImageView
-            android:id="@+id/ques_image2"
+            android:id="@+id/imageview2"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginBottom="8dp"
@@ -68,7 +68,7 @@
             app:layout_constraintEnd_toEndOf="@+id/password"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/password"
-            app:layout_constraintTop_toBottomOf="@+id/ques_image1">
+            app:layout_constraintTop_toBottomOf="@+id/imageview1">
 
             <EditText
                 android:layout_width="match_parent"
@@ -89,9 +89,9 @@
             android:layout_marginRight="16dp"
             android:layout_marginStart="16dp"
             app:layout_constraintBottom_toTopOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="@+id/ques_image1"
+            app:layout_constraintEnd_toEndOf="@+id/imageview1"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/ques_image1"
+            app:layout_constraintStart_toStartOf="@+id/imageview1"
             app:layout_constraintTop_toBottomOf="@+id/loginId">
 
             <EditText
