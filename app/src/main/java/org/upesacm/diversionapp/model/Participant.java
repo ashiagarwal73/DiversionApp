@@ -7,6 +7,15 @@ public class Participant {
     String password;
     String name;
 
+    public int getLocked() {
+        return locked;
+    }
+
+    public void setLocked(int locked) {
+        this.locked = locked;
+    }
+
+    int locked;
     public int getScore() {
         return score;
     }

@@ -18,9 +18,8 @@ public class Question1 extends SupportBlurDialogFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
-        View view = inflater.inflate(R.layout.text_type, container, false);
+        View view = inflater.inflate(R.layout.image_type, container, false);
         view.findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,16 +29,6 @@ public class Question1 extends SupportBlurDialogFragment {
         });
         return view;
     }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        Window window2 = getDialog().getWindow();
-        if (window2 != null) {
-            window2.setLayout(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
-        }
-    }
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);

@@ -1,7 +1,11 @@
-package org.upesacm.diversionapp;
+package org.upesacm.diversionapp.Activity;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
+import android.content.DialogInterface;
+import android.os.CountDownTimer;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -10,6 +14,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import org.upesacm.diversionapp.Adapter.PagerAdapter;
+import org.upesacm.diversionapp.R;
+import org.upesacm.diversionapp.ViewPagerCustomDuration;
+import org.upesacm.diversionapp.ViewPagerFragments.page1;
+import org.upesacm.diversionapp.ViewPagerFragments.page2;
+import org.upesacm.diversionapp.ViewPagerFragments.page3;
+import org.upesacm.diversionapp.ViewPagerFragments.page4;
+import org.upesacm.diversionapp.ViewPagerFragments.page5;
+import org.upesacm.diversionapp.ViewPagerFragments.page6;
+import org.upesacm.diversionapp.ViewPagerFragments.page7;
 import org.upesacm.diversionapp.questions.Question1;
 import org.upesacm.diversionapp.questions.Question10;
 import org.upesacm.diversionapp.questions.Question2;
@@ -52,7 +66,8 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
     boolean ques1Done, ques2Done, ques3Done, ques4Done, ques5Done, ques61Done, ques62Done, ques63Done, ques71Done;
     boolean ques72Done, ques73Done, ques81Done, ques82Done, ques83Done, ques91Done, ques92Done, ques93Done, ques94Done;
     boolean ques95Done, ques96Done, ques97Done, ques98Done, ques99Done, ques10Done;
-
+    private boolean back;
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -652,9 +667,51 @@ public class MainActivity extends AppCompatActivity implements page1.Callback, p
     @Override
     public void question10() {
         moveXY(400f, 700f);
+        moveX(600f);
         mViewPager.setCurrentItem(6);
         b.setBackgroundResource(R.drawable.selected);
         ques10Done = true;
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        new CountDownTimer(5000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+            }
+
+            public void onFinish() {
+                if (!back) {
+                    finish();
+                }
+            }
+        }.start();
+        back=false;
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        back = true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        AlertDialog.Builder dialog=new AlertDialog.Builder(this);
+        dialog.setMessage("On closing you wont be able to continue the game");
+        dialog.setTitle("Finish the game?");
+        dialog.setPositiveButton("Finish", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+    }
 }

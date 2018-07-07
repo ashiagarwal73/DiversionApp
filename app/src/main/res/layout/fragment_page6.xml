@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".page1">
+    tools:context=".ViewPagerFragments.page1">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ques_image1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
@@ -28,11 +28,11 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="0.081"/>
 
     <Button
@@ -47,11 +47,11 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="0.169"/>
 
     <Button
@@ -66,11 +66,11 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="0.257"/>
 
     <Button
@@ -85,11 +85,11 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="0.428"/>
 
     <Button
@@ -104,11 +104,11 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="0.536"/>
 
     <Button
@@ -123,11 +123,11 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="0.646"/>
 
     <Button
@@ -142,11 +142,11 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="0.808"/>
 
     <Button
@@ -161,11 +161,11 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="0.896"/>
 
     <Button
@@ -180,10 +180,10 @@
         android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/ques_image1"
+        app:layout_constraintEnd_toEndOf="@+id/ques_image1"
         app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/ques_image1"
+        app:layout_constraintTop_toTopOf="@+id/ques_image1"
         app:layout_constraintVertical_bias="1.0"/>
 </android.support.constraint.ConstraintLayout>

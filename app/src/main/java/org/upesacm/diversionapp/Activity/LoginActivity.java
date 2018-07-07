@@ -1,4 +1,4 @@
-package org.upesacm.diversionapp;
+package org.upesacm.diversionapp.Activity;
 
 import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
@@ -14,6 +14,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import org.upesacm.diversionapp.R;
 import org.upesacm.diversionapp.model.Participant;
 
 public class LoginActivity extends AppCompatActivity {
@@ -43,9 +44,18 @@ public class LoginActivity extends AppCompatActivity {
                         {
                             Participant participant=dataSnapshot1.getValue(Participant.class);
                             if(participant.getPassword().equals(userPassword)){
+                               if(participant.getLocked()==0){
+                                    participant.setLocked(1);
+                                    mDatabaseReference.child(dataSnapshot1.getKey()).setValue(participant);
                                 Intent intent=new Intent(LoginActivity.this,MainActivity.class);
                                 startActivity(intent);
                                 finish();
+
+                                }
+                                else {
+                                    Toast.makeText(getApplicationContext(), "Already Logged In ", Toast.LENGTH_SHORT).show();
+
+                                }
                             }
                             else {
                                 Toast.makeText(getApplicationContext(), "Wrong Password ", Toast.LENGTH_SHORT).show();

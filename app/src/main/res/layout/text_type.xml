@@ -1,50 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="300dp"
-    android:layout_height="400dp"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:padding="40dp"
-    android:background="@drawable/question_background"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    android:padding="30dp">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#000"
-        android:padding="10dp"
-        android:text="Answer this Question"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textStyle="normal"
-        android:textColor="#000"
-        android:padding="10dp"
-
-        android:text="This is hint"/>
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Q2) Aishwarya Rai was crowned Miss World in which year?"
+        android:textColor="#300000"
+        android:textSize="22sp"/>
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:hint="Write your Answer"
-        android:inputType="textPersonName"
-        />
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Write your answer"
+        android:inputType="text|textPersonName"/>
 
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="This is a hint"
+        android:textColor="#000"
+        android:textSize="15sp"/>
     <Button
         android:id="@+id/submit"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:background="@drawable/round_button"
-        android:text="Submit"/>
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_gravity="end"
+        android:background="@drawable/button_background"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffff"
+        android:textSize="19dp"/>
 </LinearLayout>

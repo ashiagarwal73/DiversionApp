@@ -1,4 +1,4 @@
-package org.upesacm.diversionapp;
+package org.upesacm.diversionapp.ViewPagerFragments;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import org.upesacm.diversionapp.R;
 
 public class page1 extends android.support.v4.app.Fragment {
     Callback callback;
@@ -44,7 +46,7 @@ public class page1 extends android.support.v4.app.Fragment {
         callback = (Callback) context;
     }
 
-    interface Callback {
+    public interface Callback {
 
         void clickToNextFrom1(Button button);
 

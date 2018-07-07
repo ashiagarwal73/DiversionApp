@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    android:padding="30dp">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Listen to the Audio clip and write down the word you listen"
+        android:textColor="#300000"
+        android:textSize="22sp"/>
+
+    <ImageView
+        android:id="@+id/audio_button"
+        android:layout_width="117dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/audio"/>
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Write your answer"
+        android:inputType="textPersonName"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="This is a hint"
+        android:textColor="#000"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/button_background"
+        android:text="Submit"
+        android:textColor="#ffff"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</LinearLayout>

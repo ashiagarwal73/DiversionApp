@@ -1,8 +1,16 @@
-package org.upesacm.diversionapp;
+package org.upesacm.diversionapp.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import org.upesacm.diversionapp.ViewPagerFragments.page1;
+import org.upesacm.diversionapp.ViewPagerFragments.page2;
+import org.upesacm.diversionapp.ViewPagerFragments.page3;
+import org.upesacm.diversionapp.ViewPagerFragments.page4;
+import org.upesacm.diversionapp.ViewPagerFragments.page5;
+import org.upesacm.diversionapp.ViewPagerFragments.page6;
+import org.upesacm.diversionapp.ViewPagerFragments.page7;
 
 public class PagerAdapter extends FragmentStatePagerAdapter{
     public PagerAdapter(FragmentManager fm) {

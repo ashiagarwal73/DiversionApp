@@ -16,7 +16,7 @@ public class Question5 extends SupportBlurDialogFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.text_type, container, false);
+        View view = inflater.inflate(R.layout.music_type, container, false);
         view.findViewById(R.id.submit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

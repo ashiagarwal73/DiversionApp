@@ -1,16 +1,14 @@
-package org.upesacm.diversionapp;
+package org.upesacm.diversionapp.ViewPagerFragments;
 
-import android.app.Fragment;
 import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
+
+import org.upesacm.diversionapp.R;
 
 public class page7 extends android.support.v4.app.Fragment{
     Callback callback;
@@ -35,7 +33,7 @@ public class page7 extends android.support.v4.app.Fragment{
         super.onAttach(context);
         callback=(page7.Callback) context;
     }
-    interface Callback{
+    public interface Callback{
         void clickToNextFrom10( Button button);
 
     }
