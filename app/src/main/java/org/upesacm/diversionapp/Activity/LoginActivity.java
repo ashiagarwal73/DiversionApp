@@ -27,6 +27,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         loginId=findViewById(R.id.loginId);
         password=findViewById(R.id.password);
+
+        getWindow().setBackgroundDrawableResource(R.drawable.login_background);
     }
 
     public void onSubmit(View view) {
